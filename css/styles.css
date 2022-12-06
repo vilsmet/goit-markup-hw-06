@@ -845,7 +845,7 @@ textarea:focus-visible {
   appearance: none; */
 }
 .checkbox-label {
-  padding-left: 37px;
+  margin-left: 37px;
   font-size: 14px;
   line-height: 1.714;
 }
