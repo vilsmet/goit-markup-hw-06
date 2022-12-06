@@ -704,32 +704,47 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 50%;
   cursor: pointer;
-}
-.form-field {
-  display: inline-block;
-  position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  justify-content: center;
+}
+.modal-close .modal-button-close {
+    transition: fill 250ms var(--timing-function);
+}
+.modal-close:hover .modal-button-close,
+.modal-close:focus .modal-button-close {
+  fill: var(--accent1-color);
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .form-field.text {
   margin-bottom: 20px;
 }
 
-.name {
-  position: absolute;
-  left: 0px;
-  top: -10px;
-  transform: translate(0, -50%);
+.form-field .name {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.167;
   color: var(--secondary-text-color);
 }
+.form-field .modal-name {
+  display: block;
+}
 
 .form-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -737,7 +752,9 @@ body {
 .modal-person {
   position: absolute;
   left: 15px;
+  bottom: 14px;
   pointer-events: none;
+  /* transform: translate(0, 50%); */
 }
 
 textarea {
@@ -886,6 +903,9 @@ textarea:focus-visible {
   top: 50%;
   transform: translate(0, -50%);
   pointer-events: none;
+}
+.modal .name {
+  margin-bottom: 4px;
 }
 .footer-form input {
   padding-left: 16px;
