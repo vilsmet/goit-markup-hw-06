@@ -505,7 +505,7 @@ body {
   height: 92px;
 }
 .item .item2 {
-  fill: inherit;
+  fill: currentColor;
 }
 .additional .item {
   display: flex;
@@ -513,7 +513,7 @@ body {
   justify-content: center;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  fill: rgba(175, 177, 184, 1);
+  color: rgba(175, 177, 184, 1);
   max-width: 170px;
   height: 92px;
   transition-property: fill, border;
@@ -523,7 +523,7 @@ body {
 
 .additional .item:hover,
 .additional .item:focus {
-  fill: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
   border: 1px solid rgba(33, 150, 243, 1);
   cursor: pointer;
 }
@@ -916,3 +916,4 @@ textarea:focus-visible {
   cursor: pointer;
   border: 1px solid var(--accent1-color);
 }
+
