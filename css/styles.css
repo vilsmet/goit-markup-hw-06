@@ -748,9 +748,12 @@ textarea {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
+  transition: border 250ms var(--timing-function);
 }
-textarea:focus {
+.form-field textarea:focus,
+.form-field textarea:hover {
   border: 1px solid var(--accent1-color);
+  cursor: pointer;
 }
 textarea:focus-visible {
   outline: none;
@@ -864,9 +867,13 @@ textarea:focus-visible {
 .modal-check {
   position: absolute;
   background-color: var(--accent2-color);
-  border: 2px solid var(--primary-text-color)
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
   left: 14px;
   top: 50%;
   transform: translate(0, -50%);
   pointer-events: none;
+}
+.footer-form input{
+  padding-left: 16px;
 }
